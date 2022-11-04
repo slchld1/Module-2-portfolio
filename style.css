@@ -1,0 +1,206 @@
+* {
+    font-family: serif;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+html{
+    background-color: rgba(179, 179, 179, 0.81);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 120%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 80%;
+    color:rgb(33, 32, 32);
+}
+p{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 20px
+}
+.header {
+    width: 98%;
+    margin: 10px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgba(226, 216, 205, 0.515);
+}
+.container {
+    display: flex;
+}
+article{
+    background-color: rgba(226, 216, 205, 0.515);
+}
+#name {
+    font-size: 120%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 10px;
+}
+.port{
+    font-size: 80%;
+    padding-left: 12px;
+}
+.nav {
+    background-color: rgba(226, 216, 205, 0.515);
+
+}
+.full-nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 8vh;
+    background-color: rgba(226, 216, 205, 0.515)
+}
+nav li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    list-style: none;
+    margin: 10px;
+    border-top: 2px solid rgb(148, 148, 148);
+    border-top-width: 3px;
+    border-top-color:rgba(255, 250, 250, 0.81);
+    border-radius: 0px;
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+nav li:hover {
+    border-top-color:rgba(179, 179, 179, 0.81);
+    cursor: pointer;
+}
+nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.features {
+    margin-top: 200px;
+    width: 100%;
+}
+.work {
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+}
+.work p {
+    margin: 10px;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.portfolio{
+    width: 620px;
+    height: 410px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.features h1{
+    background-color: rgba(226, 216, 205, 0.515);
+    margin: 10px;
+    padding: 20px;
+}
+.image-container {
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+}
+.text-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text-box:hover {
+    opacity: 100%;
+}
+.work-container {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(226, 216, 205, 0.515);
+}
+.work-container img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem black;
+}
+.study-guide {
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+    padding: 10px
+}
+.demo-web {
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+.github {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.about-me{
+    background-color: rgba(226, 216, 205, 0.515);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.contactwrap {
+    background-color: rgba(226, 216, 205, 0.515);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px; 
+    box-sizing: border-box;
+    width: 98%;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1024px){
+    nav li {
+        width: 60%;
+    }
+    img {
+        max-width: 100%;
+        max-height: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+}
